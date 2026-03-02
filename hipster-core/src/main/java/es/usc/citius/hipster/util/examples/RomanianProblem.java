@@ -24,9 +24,26 @@ public class RomanianProblem {
      * Enum with all the cities of the problem.
      */
     public enum City{
-        Arad, Bucharest, Craiova, Drobeta, Eforie, Fagaras, Giurgiu,
-        Hirsova, Iasi, Lugoj, Mehadia, Neamt, Oradea, Pitesti, Rimnicu_Vilcea,
-        Sibiu, Timisoara,  Urziceni, Vaslui, Zerind
+        Arad,
+        Bucharest,
+        Craiova,
+        Drobeta,
+        Eforie,
+        Fagaras,
+        Giurgiu,
+        Hirsova,
+        Iasi,
+        Lugoj,
+        Mehadia,
+        Neamt,
+        Oradea,
+        Pitesti,
+        Rimnicu_Vilcea,
+        Sibiu,
+        Timisoara,
+        Urziceni,
+        Vaslui,
+        Zerind
     }
 
     private static final Map<City, Double> heuristicMap = new HashMap<City, Double>();
