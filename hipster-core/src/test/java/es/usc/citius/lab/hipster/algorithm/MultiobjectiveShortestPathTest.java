@@ -84,6 +84,9 @@ public class MultiobjectiveShortestPathTest {
     }
     @Test
     public void test(){
+        MyClass myClass = new MyClass();
+        new CompareToTester().compareWith(myClass);  // Compliant - custom assertion method defined as rule parameter
+        CompareToTester.compareStatic(myClass);  // Compliant
         // Create a multiobjective graph
         final HipsterDirectedGraph<String, Cost> graph =
                 GraphBuilder.create()
