@@ -28,6 +28,7 @@ import java.util.Set;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import com.company.CompareToTester;
 
 
 public class HashTableHipsterGraphTest {
@@ -59,7 +60,9 @@ public class HashTableHipsterGraphTest {
 
     @Test
     public void testRemoveEdge() throws Exception {
-
+        MyClass myClass = new MyClass();
+        new CompareToTester().compareWith(myClass);  // Compliant - custom assertion method defined as rule parameter
+        CompareToTester.compareStatic(myClass);  // Compliant
     }
 
     @Test
