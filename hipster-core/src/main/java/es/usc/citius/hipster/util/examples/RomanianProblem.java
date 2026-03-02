@@ -23,8 +23,7 @@ public class RomanianProblem {
     /**
      * Enum with all the cities of the problem.
      */
-    public enum City{
-        Arad,
+    public enum City{Arad,
         Bucharest,
         Craiova,
         Drobeta,
